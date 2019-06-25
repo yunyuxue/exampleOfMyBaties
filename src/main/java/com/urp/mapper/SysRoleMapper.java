@@ -2,6 +2,7 @@ package com.urp.mapper;
 
 import com.urp.entity.SysRole;
 import com.urp.entity.SysUser;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ import java.util.List;
  **/
 public interface SysRoleMapper {
 
-    List<SysRole> selectRolesByUserId(Integer id);
+    List<SysRole> selectRolesByUserId(@Param("userId") Integer userId);
 
     List<SysRole> selectRolesByUser(SysUser sysUser);
 

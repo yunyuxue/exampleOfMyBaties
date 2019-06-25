@@ -23,8 +23,8 @@ public class SysRoleServiceImpl implements SysRoleService {
     private SysRoleMapper sysRoleMapper;
 
     @Override
-    public List<SysRole> selectRolesByUserId(Integer id) {
-        return sysRoleMapper.selectRolesByUserId(id);
+    public List<SysRole> selectRolesByUserId(Integer userId) {
+        return sysRoleMapper.selectRolesByUserId(userId);
     }
 
     @Override

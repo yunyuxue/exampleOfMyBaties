@@ -4,12 +4,13 @@
 
 <mapper namespace="com.urp.mapper.SysRoleMapper">
     <select id="selectRolesByUserId" resultType="SysRole">
-        select id,
-        role_name,
-        role_enabled,
-        role_desc
+        select sr.id,
+        sr.role_name,
+        sr.role_enabled,
+        sr.role_desc
         from sys_role sr
         inner join sys_user_role sur on sur.role_id = sr.id
-        where sur.user_id = #{userId}
+        inner join sys_user su on su.id = sur.user_id
+        where su.id = #{userId}
     </select>
 </mapper>

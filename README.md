@@ -1,2 +1,4 @@
 #MyBatis实例
-MyBatista小应用实例。
+
+
+简单的MyBatis入门实例。

@@ -2,7 +2,7 @@ package com.urp.controller;
 
 import com.urp.service.SysUserService;
 import com.urp.entity.SysUser;
-import com.urp.utils.UserConstant;
+import com.urp.constant.UserConstant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

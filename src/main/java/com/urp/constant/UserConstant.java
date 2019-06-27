@@ -1,4 +1,4 @@
-package com.urp.utils;
+package com.urp.constant;
 
 /**
  * @Author AlaneyS
